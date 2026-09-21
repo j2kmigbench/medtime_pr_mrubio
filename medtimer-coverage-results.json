@@ -324,7 +324,7 @@
           "branches_covered": 1,
           "branches_missed": 3,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/MedicineHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/MedicineHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/MedicineStockFragment",
@@ -962,7 +962,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/helpers/TimeHelper",
@@ -972,7 +972,7 @@
           "branches_covered": 0,
           "branches_missed": 18,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/overview/LatestRemindersViewHolder",
@@ -1138,7 +1138,7 @@
           "branches_covered": 4,
           "branches_missed": 20,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/AdvancedReminderSettingsFragment",
@@ -1408,7 +1408,7 @@
           "branches_covered": 22,
           "branches_missed": 2,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/schedulertests/SchedulingSimulatorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/schedulertests/SchedulingSimulatorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/scheduling/WeekendModeSchedulingDecorator",
@@ -1464,7 +1464,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/EditMedicineFragment",
@@ -1740,7 +1740,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/Notifications",
@@ -2072,7 +2072,7 @@
           "branches_covered": 11,
           "branches_missed": 11,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/ReminderWorker",
@@ -2230,7 +2230,7 @@
           "branches_covered": 14,
           "branches_missed": 18,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/ReminderProcessor",
@@ -2502,7 +2502,7 @@
           "branches_covered": 16,
           "branches_missed": 4,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/MedicineHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/MedicineHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/helpers/ReminderHelper",
@@ -2512,7 +2512,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/helpers/SummaryHelper",
@@ -2532,7 +2532,7 @@
           "branches_covered": 14,
           "branches_missed": 20,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/EditMedicineFragment",
@@ -2932,7 +2932,7 @@
           "branches_covered": 17,
           "branches_missed": 17,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/Notifications",
@@ -3172,7 +3172,7 @@
           "branches_covered": 23,
           "branches_missed": 1,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/schedulertests/SchedulingSimulatorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/schedulertests/SchedulingSimulatorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/scheduling/StandardScheduling",
@@ -3590,7 +3590,7 @@
           "branches_covered": 42,
           "branches_missed": 16,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/MedicineHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/MedicineHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/helpers/TimeHelper",
@@ -3600,7 +3600,7 @@
           "branches_covered": 14,
           "branches_missed": 20,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/EstimateStockRunOutDate",
@@ -3740,7 +3740,7 @@
           "branches_covered": 8,
           "branches_missed": 8,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/AlarmProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/AlarmProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/DebugReschedule",
@@ -3770,7 +3770,7 @@
           "branches_covered": 15,
           "branches_missed": 17,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/NotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/NotificationSkippedWorker",
@@ -3820,7 +3820,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/RefillProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/RefillProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/ReminderContext",
@@ -3890,7 +3890,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/RepeatProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/RepeatProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/RepeatWorker",
@@ -3910,7 +3910,7 @@
           "branches_covered": 0,
           "branches_missed": 6,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/ScheduleNextReminderNotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/ScheduleNextReminderNotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/ScheduleNextReminderNotificationWorker",
@@ -3930,7 +3930,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/processortests/ShowReminderNotificationProcessorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/processortests/ShowReminderNotificationProcessorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/SnoozeProcessor",
@@ -4180,7 +4180,7 @@
           "branches_covered": 24,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/schedulertests/SchedulingSimulatorTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/schedulertests/SchedulingSimulatorTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/reminders/scheduling/StandardScheduling",
@@ -4356,7 +4356,7 @@
           "branches_covered": 15,
           "branches_missed": 19,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/EditMedicineFragment",
@@ -4812,7 +4812,7 @@
           "branches_covered": 0,
           "branches_missed": 0,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/ReminderHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/helpers/ResourcesExtensions",
@@ -4852,7 +4852,7 @@
           "branches_covered": 15,
           "branches_missed": 19,
           "has_corresponding_test_file": true,
-          "test_file_path": "/home/moss/android-workspace/medTimer/app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
+          "test_file_path": "app/src/test/java/com/futsch1/medtimer/TimeHelperTest.kt"
         },
         {
           "file_path": "com/futsch1/medtimer/medicine/EditMedicineFragment",

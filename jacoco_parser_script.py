@@ -4,9 +4,11 @@ import subprocess
 import xml.etree.ElementTree as ET
 import pandas as pd
 import re
+import sys
 
-REPO_PATH = "/home/moss/android-workspace/medTimer"
-TEST_DIR = os.path.join(REPO_PATH, "app", "src", "test")
+REPO_PATH = sys.argv[1]
+if REPO_PATH:
+    TEST_DIR = os.path.join(REPO_PATH, "app", "src", "test")
 
 def get_modified_sources(base_sha, head_sha):
     cmd = subprocess.run(
@@ -99,6 +101,7 @@ def main():
             test_java_name = f"{class_name_strip}Test.java"
 
             test_file = test_files_lookup.get(test_kt_name) or test_files_lookup.get(test_java_name)
+            test_file = os.path.relpath(test_file, REPO_PATH) if test_file else None
 
             child_result = {
                 "file_path": key,
