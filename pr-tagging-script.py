@@ -1,19 +1,13 @@
 import json
 import subprocess
 
-with open('medtimer-migration-prs.json', 'r') as f:
-    prs_data = json.load(f)
-    sha_map = {item["pr_number"]: item["base_sha_full"] for item in prs_data["prs"]}
-
 with open('build_results.json', 'r') as file:
     data = json.load(file)
 
-push_results = []
-
-for item in data:
+for item in data["prs"]:
     warnings = []
     pr_number = item["pr_number"]
-    base_sha_full = sha_map.get(pr_number)
+    base_sha_full = item["base_sha_full"]
     if not base_sha_full:
                 warnings.append(f"PR #{pr_number} not found in SHA mapping file")
     git_result = item["git_result"]
@@ -35,23 +29,16 @@ for item in data:
             ghcr_result = False
     else:
         warnings.append("GHCR push skipped due to verification failure")
+
     if not git_result:
         warnings.append("Git history stripping failed (more than 1 commit found)")
     if not network_result:
         warnings.append("Offline build failed under --network none")
 
-    push_result = {
-        "pr_number": pr_number,
-        "base_sha_full": base_sha_full,
-        "image_size": size,
-        "git_result": git_result,
-        "network_result": network_result,
-        "ghcr_result": ghcr_result,
-        "warnings": warnings
-    }
-    push_results.append(push_result)
+    item["ghcr_result"] = ghcr_result,
+    item["warnings"] = warnings
 
 with open('build_results.json', 'w') as file:
-    json.dump(push_results, file, indent=2)
+    json.dump(data, file, indent=2)
 
 print("Image tagging and GHCR push completed. Results in build_results.json.")

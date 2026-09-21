@@ -1,0 +1,7 @@
+FROM medtimer-base:latest
+
+WORKDIR /workspace
+
+RUN git clone https://github.com/Futsch1/medTimer.git repo
+
+WORKDIR /workspace/repo

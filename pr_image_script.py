@@ -6,13 +6,16 @@ import textwrap
 with open('medtimer-migration-prs.json', 'r') as file:
     data = json.load(file)
     final_results = []
+
     for item in data["prs"]:
         #Metadata Extraction
         pr_number = item["pr_number"]
         base_sha = item["base_sha_full"]
         short_sha = item["base_sha_full"][:7]
+        head_sha = item["head_sha_full"]
 
         tag = f"futsch1__medtimer:pr-{pr_number}-base-{short_sha}"
+
         dockerfile_content = textwrap.dedent(f"""
             FROM medtimer-shared:latest
 
@@ -26,8 +29,10 @@ with open('medtimer-migration-prs.json', 'r') as file:
                 git add -A && \
                 git commit -q -m "base state"
                 
-            RUN chmod +x ./gradlew && \
-                ./gradlew --no-daemon assembleDebug
+            RUN chmod +x ./gradlew
+            RUN ./gradlew --no-daemon assembleDebug
+            RUN ./gradlew testDebugUnitTest --no-daemon || true
+            RUN ./gradlew compileDebugUnitTestKotlin --no-daemon || true
             """)
         with open('Dockerfile.tmp', 'w') as file:
             file.write(dockerfile_content)
@@ -45,11 +50,17 @@ with open('medtimer-migration-prs.json', 'r') as file:
         lines = [line for line in gitResult.stdout.strip().splitlines() if line]
         is_single_commit = (len(lines) == 1)
 
-        networkCheck = ["docker", "run", "--rm", "--network", "none", f"{tag}", "./gradlew", "assembleDebug", "--no-build-cache", "--rerun-tasks"]
+        networkCheck = [
+            "docker", "run", "--rm", "--network", "none", f"{tag}",
+            "./gradlew", "testDebugUnitTest", "--offline", "--gradle-user-home", "/root/.gradle",
+            "-x", "connectedDebugAndroidTest"
+        ]
         networkResult = subprocess.run(networkCheck, capture_output=True, text=True)
 
         pr_result = {
             "pr_number": pr_number,
+            "base_sha_full" : base_sha,
+            "head_sha_full" : head_sha,
             "image_size": subprocess.run(["docker", "image", "inspect", tag, "--format={{.Size}}"], capture_output=True, text=True).stdout.strip(),
             "git_result": is_single_commit,
             "network_result": networkResult.returncode == 0
@@ -57,6 +68,6 @@ with open('medtimer-migration-prs.json', 'r') as file:
         final_results.append(pr_result)
 
 with open('build_results.json', 'w') as file:
-    json.dump(final_results, file, indent=2)
+    json.dump({"prs": final_results}, file, indent=2)
 
 print("Image build and verification completed successfully. Results saved to build_results.json.")
